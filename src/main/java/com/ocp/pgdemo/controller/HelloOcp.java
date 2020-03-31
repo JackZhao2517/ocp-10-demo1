@@ -11,14 +11,14 @@ import com.ocp.pgdemo.model.RspModel;
 public class HelloOcp {
 	@GetMapping("/hello")
 	public String hello() {
-		return "Hello() for oc exercise 2!";
+		return "Hello() for oc exercise 2!_update";
 	}
 
 	@GetMapping("/api/v1/hello")
 	public ResponseEntity<RspModel> helloRes(){
 		RspModel rsp = new RspModel();
 		rsp.setCode(200);
-		rsp.setData("HelloRes() for oc exercise 2!");
+		rsp.setData("HelloRes() for oc exercise 2_update!");
 		
 		return new ResponseEntity<RspModel>(rsp, HttpStatus.OK);
 		
