@@ -41,7 +41,7 @@ spring:
       connection-timeout: 20000
       maximum-pool-size: 5
   jpa: 
-    database-platform: org.hibernate.dialect.PostgreSQL95Dialect
+    #database-platform: org.hibernate.dialect.PostgreSQL95Dialect
     show-sql: true
     properties:
       hibernate:
